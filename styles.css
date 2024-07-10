@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #19e1d1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.container {
+  width: 300px;
+  margin-top: 20px;
+}
+#shopping-list {
+  list-style-type: none;
+  padding: 0;
+}
+#shopping-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #156827;
+}
+.purchased {
+  text-decoration: line-through;
+  background-color: #9a4fa1;
+}
+button {
+  margin-top: 10px;
+}
+
+h1 {
+  font-family: "Franklin Gothic Medium";
+  font-style: italic;
+  font-size: 50px;
+  text-align: center;
+  color: #5c6706;
+}
