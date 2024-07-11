@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // A function to add an item to the list
   function addItem() {
-    const itemText = itemInput.value.trim();
+    const itemText = itemInput.value.trim(); // Get the text from the input field
     if (itemText) {
       shoppingList.push({ text: itemText, purchased: false });
       renderList();
@@ -16,9 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // A function to mark an item as purchased
+  // A function to mark an item as purchased or un-purchased.
+  // To mark an item as purchased or un-purchased, the item is clicked.
   function togglePurchased(index) {
-    shoppingList[index].purchased = !shoppingList[index].purchased;
+    shoppingList[index].purchased = !shoppingList[index].purchased; // Toggles the purchased property of the item
     renderList();
   }
 
@@ -30,15 +31,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //A function to render the shopping list to the DOM
   function renderList() {
-    shoppingListContainer.innerHTML = "";
+    shoppingListContainer.innerHTML = ""; // Clear the inner HTML of the shoppingListContainer
     shoppingList.forEach((item, index) => {
-      const listItem = document.createElement("li");
-      listItem.textContent = item.text;
+      // Iterate over the shoppingList array
+      const listItem = document.createElement("li"); // Create a new <li> element
+      listItem.textContent = item.text; // Set the text content of the <li> element
       if (item.purchased) {
-        listItem.classList.add("purchased");
+        listItem.classList.add("purchased"); // Add the "purchased" class to the <li> element
       }
-      listItem.addEventListener("click", () => togglePurchased(index));
-      shoppingListContainer.appendChild(listItem);
+      listItem.addEventListener("click", () => togglePurchased(index)); // Add an event listener to the <li> element
+      shoppingListContainer.appendChild(listItem); // Append the <li> element to the shoppingListContainer
     });
   }
 
@@ -49,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Allow adding item by pressing Enter
   itemInput.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
-      addItem();
+      addItem(); // Call the addItem function
     }
   });
 });
