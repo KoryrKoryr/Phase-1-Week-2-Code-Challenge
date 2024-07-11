@@ -21,3 +21,6 @@
 - The script ends with a closing curly brace for the "DOMContentLoaded" event listener.
 
 In conclusion, the selected code will provide a complete implementation of a shopping list application with basic functionality like adding items, marking items as purchased, clearing the list and rendering the list to the DOM.
+
+This assignment has been hosted and deployed on GitHub pages. It can be accessed using the link below:
+https://koryrkoryr.github.io/Phase-1-Week-2-Code-Challenge/
