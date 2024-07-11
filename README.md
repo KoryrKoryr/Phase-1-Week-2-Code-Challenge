@@ -10,7 +10,7 @@
 
 - The addItem function is defined to handle adding a new item to the shopping list. It retrieves the text from the input field, trims any leading or trailing whitespace, and checks if the text is not empty. If the text is valid, it creates a new object with the text and a purchased property set to false, adds it to the shoppingList array, calls the renderList function to update the DOM, and clears the input field.
 
-- The togglePurchased function is defined to handle marking an item as purchased or unpurchased. It takes an index as an argument, toggles the purchased property of the corresponding item in the shoppingList array, and calls the renderList function to update the DOM.
+- The togglePurchased function is defined to handle marking an item as purchased or un-purchased. It takes an index as an argument, toggles the purchased property of the corresponding item in the shoppingList array, and calls the renderList function to update the DOM.
 
 - The clearList function is defined to handle clearing the shopping list. It sets the length of the shoppingList array to 0 and calls the renderList function to update the DOM.
 

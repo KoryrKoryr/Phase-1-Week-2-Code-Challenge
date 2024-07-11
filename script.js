@@ -1,6 +1,6 @@
 // Initializes shopping list application
 document.addEventListener("DOMContentLoaded", function () {
-  const shoppingList = [];
+  const shoppingList = []; //Array to store items
   const itemInput = document.getElementById("item-input");
   const addButton = document.getElementById("add-button");
   const clearButton = document.getElementById("clear-button");
